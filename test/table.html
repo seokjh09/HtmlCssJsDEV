@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+#myTable {
+  border-collapse: collapse;
+  width: 12%;
+  border: 1px solid #ddd;
+}
+
+#myTable th {
+  text-align: left;
+  padding: 12px;
+  font-size: 18px;
+}
+
+#myTable td {
+  text-align: left;
+  padding: 12px;
+  font-size: 15px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header {
+  background-color: #fcd042;
+}
+
+#myTable tr:hover {
+  background-color: #f8e7b3;
+}
+</style>
+</head>
+<body>
+
+<h2>My Customers</h2>
+
+<table id="myTable">
+  <tr class="header">
+    <th>Category</th>
+  </tr>
+  <tr>
+    <td>감성 에세이</td>
+  </tr>
+  <tr>
+    <td>건강, 운동</td>
+  </tr>
+  <tr>
+    <td>건축, 설계</td>
+  </tr>
+  <tr>
+    <td>문화, 예술</td>
+  </tr>
+  <tr>
+    <td>사랑, 이별</td>
+  </tr>
+  <tr>
+    <td>사진, 촬영</td>
+  </tr>
+  <tr>
+    <td>세계여행</td>
+  </tr>
+  <tr>
+    <td>시사, 이슈</td>
+  </tr>
+  <tr>
+    <td>요리, 레시피</td>
+  </tr>
+  <tr>
+    <td>인문학, 철학</td>
+  </tr>
+  <tr>
+    <td>IT 트렌드</td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
