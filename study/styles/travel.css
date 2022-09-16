@@ -1,0 +1,24 @@
+h1 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    line-height: 30px;
+}
+
+th {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3333b0;
+}
+
+a, a:visited {
+    color: #04a1f5;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+img {
+    width: 180px;
+    height: auto;
+}
