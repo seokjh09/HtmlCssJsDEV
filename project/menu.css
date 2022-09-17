@@ -1,5 +1,6 @@
-body {
-    margin: 0 120px;
+div.container {
+    margin: auto;
+    max-width: 1000px;
 }
 
 .menu {    
@@ -29,12 +30,13 @@ body {
 }
 
 
-.log {
+.btn {
     font-size: 16px;
     padding: 6px 15px;
     margin: 20px 40px 13px 0;
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 8px;
+    background-color: white;
 }
 
 a, a:visited {

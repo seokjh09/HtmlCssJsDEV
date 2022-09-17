@@ -1,0 +1,45 @@
+.search-container {
+    margin: 0 0 0 140px;
+}
+
+.search-form {
+    width: 480px;
+    height: 40px;
+    border: 1px solid rgb(250, 227, 124);
+    border-radius: 25px;
+    padding: 8px;
+    background-color: rgb(252, 245, 215);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
+}
+
+.search-option {
+    width: 100px;
+    height: 100%;
+    border: none;
+    color: gray;
+    background-color: rgb(252, 245, 215);
+}
+.search-option > option {
+    text-align: center;
+    background-color: white;
+}
+.search-input {
+    width: 280px;
+    height: 100%;
+    border: none;
+    color: gray;
+    background-color: rgb(252, 245, 215);
+    font-size: 15px;
+    margin: 0 12px;
+}
+.search-input::placeholder {
+    color: gray;
+}
+.search-button {
+    border: none;
+    background-color: rgb(252, 245, 215);
+    font-size: 15px;
+}
+.search-button:hover {
+    color: rgb(165, 165, 165);
+}
