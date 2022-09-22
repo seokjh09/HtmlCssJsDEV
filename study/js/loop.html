@@ -1,0 +1,33 @@
+<script>
+    // 피보나치 수열
+    // 1 1 2 3 5 8 13 21 ...
+    // n = (n-2) + (n-1)
+
+    // 100회차까지 출력 (회차기준)
+    var n_2 = 1;
+    var n_1 = 1;
+
+    console.log(n_2);
+    console.log(n_2);
+
+    for (var i=0; i<100; i++) {
+        var n = n_2 + n_1;
+        console.log(n);
+        n_2 = n_1;
+        n_1 = n;
+    }
+
+    // while
+    n_2 = 1;
+    n_1 = 1;
+
+    console.log(n_2);
+    console.log(n_2);
+
+    while (n_1 < 10000) {
+        var n = n_2 + n_1;
+        console.log(n);
+        n_2 = n_1;
+        n_1 = n;
+    }
+</script>
